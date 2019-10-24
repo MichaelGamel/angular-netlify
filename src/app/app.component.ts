@@ -12,8 +12,6 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http
-      .get('https://mina-app.herokuapp.com/api')
-      .subscribe(data => console.log);
+    this.http.get('https://mina-app.herokuapp.com/api').subscribe(console.log);
   }
 }
